@@ -235,6 +235,7 @@ input[type='checkbox'] {
   border-radius: 6px;
   text-align: center;
   font-weight: 700;
+  font-family: var(--ff-heading);
 }
 
 .list__item::after {
