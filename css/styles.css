@@ -1,18 +1,175 @@
+:root {
+  font-size: calc(0.5em + 1vw);
+
+  --clr-bg: #fafafa;
+  --clr-black: #000000;
+  --clr-light-gray: #c4c4c4;
+  --clr-gray: #4f4f4f;
+  --clr-mild-gray: #bdbdbd;
+  --clr-dark-gray: #333333;
+  --clr-orange: #f2994a;
+}
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
+body,
 h1,
-body {
+h2,
+h3,
+p,
+ol {
   margin: 0;
 }
 
 body {
   line-height: 1.5;
+  padding: 2em 1em;
+  background-color: var(--clr-bg);
+  color: var(--clr-black);
 }
 
 img {
   max-width: 100%;
+}
+
+label {
+  color: var(--clr-dark-gray);
+  font-weight: 400;
+  font-size: 0.875rem;
+}
+
+.text-bold {
+  font-weight: 700;
+}
+
+.text-italic {
+  font-style: italic;
+  color: var(--clr-black);
+}
+
+.flow > * + * {
+  margin-top: 1rem;
+}
+
+.recipe__title {
+  line-height: 0.8;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.recipe__description {
+  display: flex;
+  align-items: flex-start;
+}
+
+.six-dots {
+  color: var(--clr-light-gray);
+}
+
+.recipe__description p {
+  margin-left: 1rem;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 0.75rem;
+  color: var(--clr-gray);
+}
+
+.aside__bottom {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.content {
+  display: flex;
+}
+
+.content__description {
+  margin-left: 0.2rem;
+}
+
+.content__type {
+  color: var(--clr-mild-gray);
+  font-weight: 700;
+  font-size: 0.5rem;
+  text-transform: uppercase;
+  line-height: 0.625;
+}
+
+.content__quantity {
+  color: var(--clr-dark-gray);
+  font-weight: 500;
+  font-size: 0.625rem;
+}
+
+.content__quantity.content-orange {
+  color: var(--clr-orange);
+}
+
+.section {
+  margin-top: 1rem;
+}
+
+.ingredient + .ingredient {
+  margin-top: 2rem;
+}
+
+.ingredients__title {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--clr-dark-gray);
+  margin-bottom: 0.5rem;
+}
+
+.ingredient__title {
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: 400;
+  color: var(--clr-dark-gray);
+}
+
+.ingredient__wrapper {
+  margin-top: 0.8rem;
+}
+
+.ingredient__group {
+  display: flex;
+}
+
+.instructions__title {
+  font-size: 1.5rem;
+  color: var(--clr-dark-gray);
+  font-weight: 700;
+}
+
+.list {
+  padding: 1em;
+}
+
+.list__item {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--clr-black);
+}
+
+.source {
+  font-weight: 400;
+  font-style: italic;
+  font-size: 0.75rem;
+  color: var(--clr-mild-gray);
+}
+
+.footnote {
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.footnote__content {
+  color: #a9a9a9;
+  font-weight: 600;
+  font-size: 0.875rem;
 }
