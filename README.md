@@ -74,6 +74,6 @@ $ git clone https://github.com/khwilo/recipe-blog.git
 
 ## Contact
 
-- Website [your-website.com](https://khwilo.now.sh)
-- GitHub [@your-username](https://github.com/khwilo)
-- Twitter [@your-twitter](https://twitter.com/khwilo)
+- Website [khwilo](https://khwilo.now.sh)
+- GitHub [@khwilo](https://github.com/khwilo)
+- Twitter [@khwilo](https://twitter.com/khwilo)
