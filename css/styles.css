@@ -31,7 +31,6 @@ ol {
 
 body {
   line-height: 1.5;
-  padding: 2em 1em;
   background-color: var(--clr-bg);
   color: var(--clr-black);
   font-family: var(--ff-body);
@@ -63,6 +62,10 @@ input[type='checkbox'] {
 
 .text-heading {
   font-family: var(--ff-heading);
+}
+
+.wrapper {
+  padding: 2em 1em;
 }
 
 @media (min-width: 35em) {
@@ -195,6 +198,10 @@ input[type='checkbox'] {
   align-items: baseline;
 }
 
+.instructions__container {
+  padding: 1em;
+}
+
 .instructions__title {
   font-size: 1.5rem;
   color: var(--clr-dark-gray);
@@ -203,12 +210,35 @@ input[type='checkbox'] {
 
 .list {
   padding: 1em;
+  list-style: none;
+  counter-reset: li;
 }
 
 .list__item {
   font-size: 1rem;
   font-weight: 400;
   color: var(--clr-black);
+  counter-increment: li;
+  position: relative;
+}
+
+.list__item::before {
+  content: counter(li);
+  color: var(--clr-white);
+  background-color: var(--clr-orange);
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: -0.8em;
+  width: 1.5em;
+  margin-left: -1em;
+  border-radius: 6px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.list__item::after {
+  position: absolute;
 }
 
 .source {
