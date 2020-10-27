@@ -47,10 +47,6 @@ label {
   margin-left: 0.2rem;
 }
 
-input[type='checkbox'] {
-  padding: 10em;
-}
-
 .text-bold {
   font-weight: 700;
 }
@@ -110,7 +106,7 @@ input[type='checkbox'] {
   }
 
   .main__left {
-    width: 60%;
+    width: 70%;
   }
 }
 
